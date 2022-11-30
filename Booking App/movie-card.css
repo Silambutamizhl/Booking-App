@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.movie-background{
+    width: 100%;
+    background-image: linear-gradient(50deg, rgb(39, 40, 41) 30%, rgba(96,98,98,0.6073656269148284) 40%),url("images/ps-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   .movie-card-container{
+    padding: 30px;
+    display: flex;
+   }
+.movie-card-img img{
+    width: 250px;   
+    height: 360px;
+    border-radius: 15px 15px 0 0;
+}
+.movie-card p{
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+}
+
+.movie-details{
+    padding: 0 40px;
+}
+.movie-details div{
+    padding: 6px 0;
+    color: #ffff;
+}
+.movie-name span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+}
+.card-rating i,span,label{
+    padding-right: 6px; 
+    font-size: 20px;
+}
+
+.card-rating i{
+    font-size: 18px;
+    color:  rgb(226, 38, 69);
+  
+}
+
+.btn-rate-content{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(90, 87, 87);
+}
+.btn-content,.rate-btn-btn button{
+    margin: 10px 20px;
+}
+.btn-content p.bold{
+    font-size: 14px;  
+}
+.rate-btn-btn button{
+    padding: 6px;
+    background-color: #f1f1f1;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+.show-screen-option button{
+ padding: 8px;
+ border: none;
+}
+.button-1 a{
+    font-weight: 600;
+    font-size: 10px;
+    color: #252525;
+}
+
+.button-1 button:hover{
+    text-decoration: underline;
+}
+.movie-geners{
+    display: flex;
+}
+.movie-geners span{
+    font-size: 16px;
+}
+.movie-geners a{
+    padding: 0 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: 500;
+}
+.movie-geners a:hover{
+    text-decoration: underline;
+}
+.movie-rating-content p{
+    font-size: 20px;
+}
+
+.booking-ticket button{
+margin-top: 10px;
+width: 230px;
+padding: 12px 30px;
+font-size: 20px;
+border: none;
+border-radius: 10px;
+background-color:  rgb(216, 70, 94);
+color: #f1f1f1;
+cursor: pointer;
+}
+.share-button{
+    position: absolute;
+    right: 30px;
+}
+.share-button button{
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #ffff;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(56, 55, 55, 0.356);
+  cursor: pointer;
+}
+.share-button button i{
+    padding: 0 18px;
+}
+ form label{
+    padding: 10px 0;
+    margin: 0px 40px;
+ }
+.share-container span{
+    position: absolute;
+    float: right;
+    margin: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.share-popup{
+    display: none;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+.share-option-link div{
+    padding: 10px 20px;
+    border-top: 1px solid lightgray;
+}
+.share-option-link a{
+    font-size: 18px;
+    color: black;
+}
+.share-option-link i{
+    float: right;
+    font-size: 18px;
+    color: rgb(47, 47, 131);
+}
+
+
+.about-movie p{
+    font-size: 10px;
+    color: gray;
+   }
+   .about-movie span{
+    font-size: 12px;
+    color: black;
+
+      }
+      .Applicable-offers h3{
+       color: black;
+      }
+
+ /*-------------------------------------@emdia query--------------------*/
+
+@media screen and (max-width: 768px){
+.movie-card-container{
+    width: 700px;
+}
+.movie-card-img img{
+    width: 200px;   
+}
+.movie-details{
+    width: 70%;
+}
+.share-button{
+    padding: 0;
+}
+.share-button button{
+    font-size: 12px;
+    padding: 0;
+}
+}
+
+    
+
+
+
+
+
+

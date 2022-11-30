@@ -1,0 +1,271 @@
+/* HEADER */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+  }
+  
+  .movie-of-name{
+    padding: 10px 60px;
+    color: #ffff;
+    background-color: rgb(35, 35, 44);
+  }
+
+  .movie-sensor-content span{
+      padding: 0 5px;
+      margin: 8px 0;
+      font-size: 16px;
+      border: 2px solid #ffff;
+      border-radius: 40px;
+  }
+  .calender{
+    margin: 0 30px;
+    display: flex;
+  }
+.time-show-slot:hover.availability-status button{
+  display: block;  
+  background-color: blue;
+}
+
+  .availability-contents{
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .availability-contents div{
+    margin: 0 10px;
+  }
+  .availability-contents span{
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .circle-2{
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    border-radius: 50px;
+  }
+  .circle-1#avail{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: green;
+  }
+
+  .avail, .filling, .sub-tittle {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .sub-tittle input{
+    width: 20px;
+    font-size:6px;
+    color: green;
+  }
+
+  .availability-status{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    background-color: aqua;
+    box-shadow: 100,10,20,20 #ffff;
+  }
+  
+  /*-----------------------CALENDER-----------SECTIONS-----------------*/
+  .date-card button {
+    color: gray; 
+    background-color: #ffff;
+    font-size: 10px;
+    margin-top: 15px;
+    border: none;
+
+  }
+  .date-card button #active{
+    background-color: rgb(241, 80, 88);
+  }
+  .product-container {
+    padding: 0 5px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .calender{
+    position: relative;
+    width: 300px;
+  }
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .date-card {
+    margin: 0 5px;
+    flex: 0 0 auto;
+    width: 50px;
+  }
+  .pre-btn,
+  .nxt-btn { 
+    margin: 20px 0;
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+
+  }
+  .pre-btn img{
+    padding: 30px;
+    background-color: #ffff;
+  }
+  .pre-btn {
+    left: 20px;
+   transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+ 
+  /*-----------------------CALENDER-----------SECTIONS------------------END----------*/
+  #book-page{
+   background-color: rgb(252, 247, 247);
+  }
+  .theater-container{
+    margin: 20px;
+    background-color: #ffff;
+  }
+  .theater-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  .theater{
+    width: px;
+  }
+  .ticket{
+    display: block;
+  }
+  .theater-th{
+    display: flex;
+    float: left;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .theater-th i{
+    color: grey;
+    padding: 0 8px;
+  }
+  .ticket span{
+    font-size: 10px;
+    justify-content: center;
+  }
+   .ticket{
+    margin-left:40px;
+  }
+  .time-show-slot{
+    padding: 10px;
+  }
+  .time-show-slot button{
+    margin: 0 8px;
+    padding: 6px;
+    font-size: 12px;
+    color: green;
+    cursor: pointer;
+    border: 1px solid green;
+    background-color: #ffff;
+  }
+
+  /*---------------------------------PERMISSION------------BOX----------------------------------------------*/
+.permission-box{
+  display: none;
+  position: relative;
+  width: 400px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 10px #ccc1c1;
+}
+ .head-high{
+  display: flex;
+  justify-content: center;
+}
+.permission-box .close{
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+ol li{
+  padding:0 6px;
+  font-size: 12px;
+}
+  ol.scroll{
+    margin:4px, 4px;
+    padding:4px;
+    width: 390px;
+    height: 280px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.acceptance-btn{
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.acceptance-btn button{
+  margin: 0 20px;
+}
+.accept-btn-btn,.cancel-btn-btn{
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color:  rgb(216, 70, 94);
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.cancel-btn-btn{
+  border: none;
+  color: rgb(216, 70, 94);
+  font-weight: 500;
+  background-color:  #ffff;
+  border: 1px solid rgb(216, 70, 94);
+  cursor: pointer;
+} 
+.timeline{
+  width: 200px;
+}
+/*-------------------------------------@emdia query--------------------*/
+
+@media screen and (max-width: 768px){
+ .time-show-slot{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+
+}
+.time-show-slot button{
+  margin: 10px;
+}
+
+}

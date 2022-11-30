@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Front-page</title>
+    <!-------------------------------style---------sheets------------------------------->
+<!---1-->
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="home.css"> 
+    <link rel="stylesheet" href="movie-sec.css">
+<!---2-->
+   
+     <!--===== Boxicons CSS =====-->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CDN -------------------------------font--------------awesom------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     
+    <!-- CDN ------------------------------------boostrap------------------------------------------------->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- CDN ------------------------------------boostrap------------------------------------------------->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!-------------------------------style---------sheets------------------END------------->
+ 
+   
+</head>
+<body>
+<!-----------------------------------HEADER---------------------------------------------->
+    <header>
+        <div class="header-container" id="con">
+           
+            <div class="split-left">
+            <div class="logo-pic">
+                <img src="images/bookmyshow.jpg" class="logo-bg" alt="logo-pictures">
+            </div>
+                <div class="search-bar">
+                    <div class="search-icon">    
+                        <i class="fa fa-search"></i> <input type="text" id="open-search" placeholder="Search for Movies,Events,Plays,Sports and Activities">
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------split----------------------------right---------------------------->
+            <div class="split-right">
+                <div class="sign-upbox"  class="split">
+                    <button class="open-button" onclick="openForm()">Sign up</button>
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <div class="moden-head">
+                                <h3>Get Started</h3>
+                                <span class="close" class="btn cancel" onclick="closeForm()">&times;</span>       
+                            </div> 
+                            <div class="login-options">
+                                <div class="fielt-box">
+                                    <a href=""><img src="images/google-logo.png"  title="logo">
+                                    <Span>Continue with Google</Span></a>
+                                </div>
+                                <div class="fielt-box">
+                                    <a href=""><img src="images/email-logo.png"  title="logo">
+                                    <Span>Continue with Email</Span></a>
+                                </div>
+                                <div class="fielt-box">
+                                    <a href=""><img src="images/apple-logo.png" title="logo">
+                                    <Span>Continue with Email</Span></a>
+                                </div>
+                            </div>
+                                    <span class="or-option">OR</span>
+                            <div class="phone-no">
+                                    <input type="phone-unmber" placeholder="+91-Continue with mobile number">
+                            </div>
+                                   <div class="condition-pol">
+                                    <p>I agree to the <span> Terms and Conditions & Privacy Policy</span></p>
+                                   </div>
+                                   
+                        </form>
+                    </div>
+                </div>
+                <div class="side-menu"  class="split">
+                    <a href="javascript:void(0);" class="icon" onclick="openSidemenu()"   onclick= "closeSidemenu()" title="side-menu"><i class="fa fa-bars"></i></a>
+                    <div class="side-menu-container" id="myMenu">
+                        <div class="menu-content">
+                            <div class="pop-up">
+                                <h2>Hey!</h2>
+                                <span class="close" class="btn cancel" onclick="closeSidemenu()">&times;</span>  
+                            </div>
+                            <div class="special-offers">
+                                <div class="rewards_login">
+                                    <div class="unlock-offers">
+                                        <img src="images/rewards_login.avif" alt="" srcset="">
+                                    </div>
+                                    <div class="rewards_login-details">
+                                        <p>Unlock special offers & <br> great benefits</p>
+                                    </div>
+                                    <div class="butt">
+                                        <button onclick="openForm()"> Login / Register </button>
+                                    </div>
+                                </div>
+                                <div class="col-content" id="col">
+                                    <div class="notification">
+                                        <i class="fa fa-bell"></i> <span>Notification</span>
+                                    </div>
+                                    <div class="offer">
+                                        <i class="fa fa-credit-card"></i><span>Play Credit Card</span>
+                                        <p>View your Play Credit Card details and offers</p>
+                                    </div>
+                                    <div class="helf-support">
+                                        <i class="fa-solid fa-comment-dots"></i><span>View commonly asked queries and chat</span>
+                                    </div>
+                                    <div class="rewards">
+                                        <i class="fa fa-gift"></i><span>View your rewards &  unlock new ones</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!----------------------------HEADER-----------------END------------------------------->
+<script src="home.js"></script>
+<!----------------------------NAV--BAR-----------START----------------------------->
+<section navbar>       
+    <nav>
+        <div class="nav-container">
+            <div class="nav-items">
+                <div class="nav-links-left">
+                     <ul>
+                        <li><a href="movies">Movies</a></li>
+                        <li><a href="movies">Stream</a></li>
+                        <li><a href="movies">Events</a></li>
+                        <li><a href="movies">Movies</a></li>
+                        <li><a href="movies">Plays</a></li>
+                        <li><a href="movies">Sports</a></li>
+                        <li><a href="movies">Activities</a></li>
+                        <li><a href="movies">Buzz</a></li>
+                     </ul>
+                </div>
+                <div class="nav-links-right">
+                    <ul>
+                       <li><a href="movies">ListYourShow</a></li>
+                       <li><a href="movies">Corporates</a></li>
+                       <li><a href="movies">Offers</a></li>
+                       <li><a href="movies">Gift Cards</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </nav>
+</section>  
+<!----------------------------------------topnav-----------END-------------------->
+
+ <!---------------------------------------CAROUSEL-------START-------------------->
+                  
+    <div class="courousel-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+      
+        <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1665645572479_pvr.jpg" title="scroller-image"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1666371752983_fghjkl.jpg" title="scroller-image">
+                    </div></a>
+                    <div class="item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1664611710097_moviepageweb.jpg"  title="scroller"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1666372191823_sdcv.jpg"  title="scroller-image"></a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1666372348138_wefb.jpg" title="scroller"></a>
+                    </div>
+                   <div class="item">
+                        <a href=""><img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1664170993002_web.jpg"  title="scroller"></a>
+                    </div>
+                </div>
+      
+               <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+            </div>
+        </div>
+
+ <!---------------------------------------CAROUSEL-------END------------------->
+              
+ <!-------------------------------------filters------------------------------->
+        <section>
+            <div class="recent-shows-running">
+                <div class="filter-container">
+                    <div class="section-heading">
+                        <div class="heading">
+                            <h4>Filters</h4>
+                        </div>
+    
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">Select your Language</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                        
+                            <ul class="options">
+                                <li class="option">
+                                <span class="option-text">TAMIL</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">TELUNGU</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">MALAYALAM</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Kannada</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">HINDI</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">ENGLISH</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">Select your Genres</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                        
+                            <ul class="options">
+                                <li class="option">
+                                <span class="option-text">TAMIL</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">TELUNGU</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">MALAYALAM</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Kannada</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">HINDI</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">ENGLISH</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">Select your Format</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                        
+                            <ul class="options">
+                                <li class="option">
+                                <span class="option-text">2D</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">3D</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="browse-btn">
+                        <button type="button"> Browse by Cinemas</button>
+                    </div>
+                </div>
+             
+                 <!--<script src="script.js"></script>-->
+                <script>
+                    const optionMenu = document.querySelector(".select-menu"),
+                    selectBtn = optionMenu.querySelector(".select-btn"),
+                    options = optionMenu.querySelectorAll(".option"),
+                    sBtn_text = optionMenu.querySelector(".sBtn-text");
+    
+                    selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
+                    options.forEach(option =>{
+                    option.addEventListener("click", ()=>{
+                    let selectedOption = option.querySelector(".option-text").innerText;
+                    sBtn_text.innerText = selectedOption;
+                    optionMenu.classList.remove("active");
+                        });
+                    });
+                </script>     
+                <!--<script src="script.js"></script>-->
+    
+                
+  <!---------------------------RECENT --------------------------------MOVIES------------------>
+                 <div class="rcent-movie-container">
+                     <div class="movie-shown-city" id="disappear">
+                         <h4>Movie in Chennai</h4>
+                     </div>
+                     <div class="group-btn-for-choose-lang" id="disappear">
+                         <button type="submit" class="lang">Tamil</button>
+                         <button type="submit" class="lang">Telungu</button>
+                         <button type="submit" class="lang">Malayalam</button>
+                         <button type="submit" class="lang">Hindi</button>
+                         <button type="submit" class="lang">English</button>
+
+                         <button type="submit" class="lang">Kannada</button>
+                         <button type="submit" class="lang">Korean</button>
+                         <button type="submit" class="lang">japnese</button>
+                         <button type="submit" class="lang">concert</button>
+                     </div>
+ 
+                     <div class="movie-search-btn" id="disappear">
+                         <div class="btn-btn">
+                             <a href="" class="btn-1"> <button type="submit">Coming Soon</button></a>
+                             <a href="" class="btn-2"><button type="submit" class="btn1">Explore Upcoming Movies<i class="fa-sharp fa-solid fa-chevron-right"></i></button></a>
+                         </div> 
+                     </div>
+ 
+                    <div class="movie-list">
+                        <div class="movie-item">
+                             <div class="list-1">
+                                 <a href="movie-booking.html"> <img src="images/Ponniyin_Selvan_I.jpg" alt="ponniyin selvan logo"></a>
+                             </div>    
+                             <div class="rate-rating" id="disappear">
+                                <i class="fa-solid fa-star"></i>
+                                 <span>8.5/10</span>
+                                 <label for="votes">190.1K votes</label>
+                             </div>
+                        </div>    
+                        <div class="movie-item" >
+                             <div class="list-1">
+                                 <a href=""><img src="images/sardar.jpg" onclick="openMovies()" title="sardar-movie"></a>
+                             </div>
+                             <div class="rate-rating">
+                                <i class="fa-solid fa-star"></i>
+                                 <span>9.0/10</span>
+                                 <label for="votes">90.1K votes</label>
+                             </div>
+                        </div>
+                        <div class="movie-item" >
+                             <div class="list-1">
+                                 <a href=""><img src="images/black adam.jpg" title="black-adam-movie"></a>
+                             </div>
+                             <div class="rate-rating">
+                                <i class="fa-solid fa-star"></i>
+                                 <span>8.3/10</span>
+                                 <label for="votes">238.4K votes</label>
+                             </div>
+                        </div> 
+                        
+                        <div class="movie-item">
+                            <div class="list-1" onclick="openMovies()">
+                                <a href=""> <img src="images/beast.jpg" alt="ponniyin selvan logo"></a>
+                            </div>    
+                            <div class="rate-rating" id="disappear">
+                               <i class="fa-solid fa-star"></i>
+                                <span>8.5/10</span>
+                                <label for="votes">190.1K votes</label>
+                            </div>
+                       </div>    
+                       <div class="movie-item" >
+                            <div class="list-1">
+                                <a href=""><img src="images/cobra.jpg" onclick="openMovies()" title="sardar-movie"></a>
+                            </div>
+                            <div class="rate-rating">
+                               <i class="fa-solid fa-star"></i>
+                                <span>9.0/10</span>
+                                <label for="votes">90.1K votes</label>
+                            </div>
+                       </div>
+                       <div class="movie-item" >
+                            <div class="list-1">
+                                <a href=""><img src="images/vikram.jpg" title="black-adam-movie"></a>
+                            </div>
+                            <div class="rate-rating">
+                               <i class="fa-solid fa-star"></i>
+                                <span>8.3/10</span>
+                                <label for="votes">238.4K votes</label>
+                            </div>
+                       </div> 
+                       
+                       <div class="movie-item">
+                        <div class="list-1" onclick="openMovies()">
+                            <a href=""> <img src="images/wfe.jpg" alt="ponniyin selvan logo"></a>
+                        </div>    
+                        <div class="rate-rating" id="disappear">
+                           <i class="fa-solid fa-star"></i>
+                            <span>8.5/10</span>
+                            <label for="votes">190.1K votes</label>
+                        </div>
+                   </div>    
+                   <div class="movie-item" >
+                        <div class="list-1">
+                            <a href=""><img src="images/movie2.jpg" onclick="openMovies()" title="sardar-movie"></a>
+                        </div>
+                        <div class="rate-rating">
+                           <i class="fa-solid fa-star"></i>
+                            <span>9.0/10</span>
+                            <label for="votes">90.1K votes</label>
+                        </div>
+                   </div>
+                   <div class="movie-item" >
+                        <div class="list-1">
+                            <a href=""><img src="images/movie4.jpg" title="black-adam-movie"></a>
+                        </div>
+                        <div class="rate-rating">
+                           <i class="fa-solid fa-star"></i>
+                            <span>8.3/10</span>
+                            <label for="votes">238.4K votes</label>
+                        </div>
+                   </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!----------------------------------MOVIE-----------------CARD----------------------------------->                      
+<script src="movie-sec.js"></script>             
+
+<footer>
+
+    
+    <div class="footer">
+        <div class="footer-link">
+                <ul class="nav-play-links">
+                    <li><a href="movies">Movies</a></li>
+                    <li><a href="movies">Stream</a></li>
+                    <li><a href="movies">Events</a></li>
+                    <li><a href="movies">Movies</a></li>
+                    <li><a href="movies">Plays</a></li>
+                    <li><a href="movies">Sports</a></li>
+                    <li><a href="movies">Activities</a></li>
+                    <li><a href="movies">Buzz</a></li>
+                </ul>
+                <ul class="s-m">
+                    <li><a href="" title="sm"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="" title="sm"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="" title="sm"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="" title="sm"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="copyrights">
+            <p>Copyright 2045 All Rights Reserved. By HTML Design</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam itaque esse assumenda similique sed illo libero iure fugiat, hic nesciunt ipsam? Totam rem qui nihil aperiam expedita unde facilis dignissimos, quae odio! In, perferendis.</p>
+        </div>
+    </div>
+      
+</footer>
+
+
+
+</body>
+</html>

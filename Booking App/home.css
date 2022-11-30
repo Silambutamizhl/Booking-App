@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/*----------------------header-------START------------*/
+header{
+    height: 60px;
+    background-color: rgb(38, 38, 46);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+.split-left{
+    display: flex;
+}
+.split-left div{
+    padding-right: 25px;
+}
+.logo-pic img{
+    width: 150px;
+    height: 60px;
+}
+.split-right{
+    position: absolute;
+    display: flex;
+    right: 0;
+    padding-right: 140px;
+}
+.split-right div{
+    padding-left: 25px;   
+}
+/*-------------------------SEARCH--BAR----------------------*/
+.search-bar{
+    height: 30px;
+    margin: 15px 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    float: left;
+    background-color: #ffff;
+}
+.search-icon{
+    display: flex;
+    text-align: center;
+}
+.search-icon i{
+    font-size: 18px;
+    padding: 0 8px;
+}
+.search-icon input{  
+    padding: 0 4px;
+    min-width: 400px;
+    color: black;
+    border: none;
+    outline: none;
+    background-color:  #ffff;;
+}
+/*-------------------------SEARCH--BAR-------------------------------------*/
+
+/*--------------------------SELECT--------------CITIES -------------------*/
+.select-cities select{
+    background: none;
+    border: none;
+    color: #f1f1f1;
+}
+select option{
+color: black;
+}
+/*--------------------------SELECT--------------CITIES -------------------*/
+/*-------------------------SIGN IN----sidemenu------------------*/
+.sign-upbox button{
+    width: 70px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color:  #ffff;
+    border: none;
+    outline: none;
+    background-color: rgb(226, 38, 69);
+}
+
+/* The popup form - hidden */
+.form-popup {
+    display: none;
+    position: fixed;
+    right: 500px;
+    margin-top: 0px;
+    z-index: 10;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    text-align: center;
+    border-radius: 10px;
+    max-width: 350px;
+    height: 500px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container div span{
+    font-size: 14px;
+  }
+.moden-head{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    margin-top: 30px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.login-options a{
+ color: black;
+}
+.login-options{
+    text-align: center;
+    padding: 8px;
+}
+.fielt-box{
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 8px 0;
+    border: 1px solid gray;
+}
+.fielt-box img{
+    float: left;
+    width: 25px;
+}
+.phone-no{
+    margin: 10px 0;
+}
+.or-option{
+    font-size: 18px;
+    text-align: center;
+}
+.phone-no input{
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.condition-pol p{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.condition-pol p span{
+    text-decoration: underline;
+}
+/*-------------------------SIGN IN BIUTTON END----------------------*/
+
+
+/*-------------------------SIDE-----MENU----------CONTAINER-----------*/
+.side-menu-container{
+    margin-top: 10px;
+    position: fixed;
+    right: 0px;
+    display: none;
+    z-index: 1;
+}
+.side-menu .icon{
+    font-size: 24px;
+    color:  #ffff;
+  }
+.menu-content{
+    width: 450px;
+}
+.pop-up{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #ffff;
+    background-color: rgb(40, 40, 78);
+}
+.pop-up span{
+    font-size: larger;
+    color: #ffff;
+}
+.rewards_login{
+    display: flex;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.rewards_login img{
+    width: 40px;
+    height: 40px;
+}
+
+.butt button{
+    padding: 7px;
+    background: none;
+    border-radius: 10px;
+    font-size: 12px;
+    color: rgb(226, 38, 69);
+    border: 2px solid rgb(226, 38, 69);
+}
+
+.special-offers{
+    background-color: #fff;
+}
+.col-content div{
+    padding: 10px 10px;
+    border-bottom: 1px gray;
+    align-items: center;
+    justify-content: center;
+}
+.col-content div:hover{
+    background-color: #f1f1f1;
+}
+.col-content div i{
+    padding: 5px;
+}
+.col-content span{
+    font-size: 16px;
+}
+.col-content div :hover{
+background-color: aliceblue;
+}
+/*-------------------------SIDE----------MENU----------END----------------------*/
+
+/*------------------------------------NAVBAR---------START-----------------------------------*/
+
+.nav-container{
+    background-color: rgb(37, 37, 71);
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.nav-links-left ul{
+    display: flex;
+}
+.nav-links-right ul{
+    display: flex;
+}
+.nav-links-left ul li,.nav-links-right ul li{
+    padding: 14px 14px;
+}
+.nav-links-left ul li a,.nav-links-right ul li a{
+    color: #ffff;
+    font-size: 12px;
+}
+
+/*------------------------------------NAVBAR---------END-----------------------------------*/
+
+
+
+ /*--------------------------------------CAROUSEL------------------START--------------------*/
+
+.courousel-container{
+    background-color: rgb(245, 248, 248);
+  }
+  .carousel-inner{
+    padding: 20px 20px;
+  }
+  
+ /*--------------------------------------CAROUSEL-------END-------------------------------*/
+
+ 
+    /*--------------------------------------FOOTER------------------------------------------------*/
+    .privacy-content{
+        padding: 10px;
+        background-color: rgb(221, 211, 211);
+     }
+     .privacy-content span{
+        margin-left: 20px;
+     }
+ 
+ 
+     
+ .footer{
+     width: 100%;
+     height: 300px;
+     background-color: rgb(3, 3, 27);
+   }
+   .footer-link {
+     padding-top: 70px;
+   }
+   .footer-link ul {
+     display: flex;
+     margin: 20px 0;
+     justify-content: center;
+     align-items: center;
+     
+   }
+   .footer-link ul li a{
+     padding: 20px;
+     color: #fff;
+   }
+   .s-m li a i{
+     size:5px;
+     color: #000;
+   }
+   .s-m li i{
+     border-radius: 50%;
+     background-color: #fff;
+     padding: 10px;
+   }
+   .s-m li i:hover{
+     background-color: goldenrod;
+   }
+   .copyrights{
+     margin: 10px 0;
+     text-align: center;
+     font-size: 16px;
+     font-weight: 500;
+   }
+
+
+
+
+   /*-------------------------------------@emdia query--------------------*/
+@media screen and (max-width:768px){
+.header-container{
+    margin: 0;
+}
+    .split-right{
+        display: none;
+    }
+    .nav-container{
+        display: none;
+    }
+}
+  
+
+    
+

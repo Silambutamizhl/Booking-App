@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movie-booking.html">
+
+    <link rel="stylesheet" href="movie-sec.css">
+    <link rel="stylesheet" href="movie-card.css">
+
+      <!-- CDN -------------------------------font--------------awesom------------------------------------>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     
+      <!-- CDN ------------------------------------boostrap------------------------------------------------->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <!-- CDN ------------------------------------boostrap------------------------------------------------->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <!-------------------------------style---------sheets------------------END------------->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>    
+<!----------------------------------MOVIE-----------------CARD----------------------------------->                      
+<div class="movie-background">
+    <div class="movie-card-container">
+        <div class="movie-card">
+            <div class="movie-card-img">
+            <img src="images/Ponniyin_Selvan_I.jpg" alt="">
+            <!-- <div class="movie-curve"> -->
+                <p>In Cinemas</p>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="movie-details">
+            <div class="movie-name">
+                <span>Ponniyin Selvan-Part-1</span>
+            </div>
+            <div class="movie-rating-content">
+                <div class="card-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>9.2/10</span>
+                    <label for="votes">175.2K ratings</label>
+                </div>
+                <div class="btn-rate-content">
+                    <div class="btn-content">
+                        <p class="bold">Add your rating & review
+                        <br>Your ratings matter</p>
+                        </div>
+                         <div class="rate-btn-btn">
+                            <button type="submit">Rate Now</button>
+                         </div>
+                    
+                </div>
+                
+                <div class="show-screen-option">
+                    <div class="button-1">
+                        <a href=""><button type="submit"> 2D, IMAX 2D</button></a>
+                        <a href=""><button type="submit"> Tamil ,Hindi, English, Malayalm,Kannada,Telungu</button></a>
+                    </div>
+                </div>
+                <div class="movie-geners">
+                    <span>2h 47m</span>
+                    <a href="">Action,Adventure ,Drama,Historic</a>
+                    <span>UA</span>
+                </div>
+                <p>30 Sep, 202<p>
+
+                <div class="booking-ticket">
+                    <a href="ticket-sec.html" title="share-link"><button title="open-ticket">Book tickets</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="share-button">
+            <a href="javascript:void(0);"><button type="submit" onclick="openShare()"><i class="fa fa-share-nodes"></i>Share</button></a>
+            <div class="share-popup" id="myShare">
+                <form action="/action_page.php" class="share-container">
+                    <label for="head" id="share">share here</label>
+                    <span class="close" class="btn cancel" onclick="closeShare()">&times;</span>
+                      <div class="share-option-link">
+                        <div class="facebook">
+                            <a href=""> Factebook<i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="">Twitter <i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="copylink">
+                            <a href="">Copy Link <i class="fa fa-paperclip"></i></a>
+                        </div>
+                      </div>   
+                </form> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="home.js"></script>
+<!----------------------------------MOVIE-----------------CARD----------------------------------->
+   
+<div class="movie-details" id="sec-1">
+    <div class="about-movie">
+        <span>About the Movie</span>
+        <p>Vandiyathevan, a brave and brilliant young man sets out to cross the Chola land to deliver a message from the Crown Prince Adithya Karikalan. The narrative deals with attempts by his sister Kundavai to bring back Arulmozhivarman to establish political peace in a land seemingly beset with unrest and civil war plotted by vassals and petty chieftains.</p>
+    </div>
+</div>
+
+
+</body>
+</html>
